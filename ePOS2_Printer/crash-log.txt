@@ -1,0 +1,113 @@
+10-30 14:31:15.468 20344 21477 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 21477 (Thread-13), pid 20344 (n.epos2_printer)
+10-30 14:31:15.681 21487 21487 F DEBUG   : Revision: '0'
+10-30 14:31:15.681 21487 21487 F DEBUG   : ABI: 'arm64'
+10-30 14:31:15.681 21487 21487 F DEBUG   : Timestamp: 2025-10-30 14:31:15.546681366+0800
+10-30 14:31:15.682 21487 21487 F DEBUG   : Process uptime: 52s
+10-30 14:31:15.682 21487 21487 F DEBUG   : Cmdline: com.epson.epos2_printer
+10-30 14:31:15.682 21487 21487 F DEBUG   : pid: 20344, tid: 21477, name: Thread-13  >>> com.epson.epos2_printer <<<
+10-30 14:31:15.682 21487 21487 F DEBUG   : uid: 10377
+10-30 14:31:15.682 21487 21487 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+10-30 14:31:15.682 21487 21487 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+10-30 14:31:15.682 21487 21487 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+10-30 14:31:15.682 21487 21487 F DEBUG   : Abort message: '==20344==ERROR: HWAddressSanitizer: allocation-tail-overwritten; heap object [0x003928417b80,0x003928417b83) of size 3
+10-30 14:31:15.682 21487 21487 F DEBUG   : 
+10-30 14:31:15.682 21487 21487 F DEBUG   : Stack of invalid access unknown. Issue detected at deallocation time.
+10-30 14:31:15.682 21487 21487 F DEBUG   : deallocated here:
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #0 0x007294c6d57c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x2957c) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #1 0x00687d42f00c  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1fd00c) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #2 0x00687d431f34  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1fff34) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #3 0x00687d4179d0  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1e59d0) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #4 0x00687d3a4c40  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x172c40) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #5 0x00687d46501c  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x23301c) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #6 0x00007168e130  (/system/framework/arm64/boot-core-libart.oat+0x56130) (BuildId: 21321375fd972b3be3cebfba2bca86b006e7173e)
+10-30 14:31:15.682 21487 21487 F DEBUG   : 
+10-30 14:31:15.682 21487 21487 F DEBUG   : allocated here:
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #0 0x007294c6dbd8  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x29bd8) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #1 0x0072bf8f8564  (/apex/com.android.runtime/lib64/bionic/hwasan/libc.so+0x66564) (BuildId: b41314433acc8c79eed7364e6ed3137e)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #2 0x00687d42edcc  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1fcdcc) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #3 0x00687d43a384  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x208384) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #4 0x00687d417fc0  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1e5fc0) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #5 0x00687d3c40b8  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1920b8) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #6 0x00687d3c39f8  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1919f8) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #7 0x00687d3a4bcc  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x172bcc) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #8 0x00687d46501c  (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x23301c) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :     #9 0x00007168e130  (/system/framework/arm64/boot-core-libart.oat+0x56130) (BuildId: 21321375fd972b3be3cebfba2bca86b006e7173e)
+10-30 14:31:15.682 21487 21487 F DEBUG   : 
+10-30 14:31:15.682 21487 21487 F DEBUG   : Tail contains: .. .. .. 1c 21 04 13 cc d1 75 7a cd 22 c6 3c 3d 
+10-30 14:31:15.682 21487 21487 F DEBUG   : Expected:      .. .. .. c6 31 71 13 cc d1 75 7a cd 22 c6 3c 3d 
+10-30 14:31:15.682 21487 21487 F DEBUG   :                         ^^ ^^ ^^                               
+10-30 14:31:15.682 21487 21487 F DEBUG   : This error occurs when a buffer overflow overwrites memory
+10-30 14:31:15.682 21487 21487 F DEBUG   : after a heap object, but within the 16-byte granule, e.g.
+10-30 14:31:15.682 21487 21487 F DEBUG   :    char *x = new char[20];
+10-30 14:31:15.682 21487 21487 F DEBUG   :    x[25] = 42;
+10-30 14:31:15.682 21487 21487 F DEBUG   : HWAddressSanitizer does not detect such bugs in uninstrumented code at the time of write,
+10-30 14:31:15.682 21487 21487 F DEBUG   : but can detect them at the time of free/delete.
+10-30 14:31:15.682 21487 21487 F DEBUG   : To disable this feature set HWASAN_OPTIONS=free_checks_tail_magic=0
+10-30 14:31:15.682 21487 21487 F DEBUG   : Thread: T68 0x0069000b2000 stack: [0x006882e28000,0x006882f30500) sz: 1082624 tls: [0x006882f30840,0x006882f34000)
+10-30 14:31:15.682 21487 21487 F DEBUG   : Memory tags around the buggy address (one tag corresponds to 16 bytes):
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417300: 88  88  8c  08  0c  fe  fb  08  ca  08  62  08  11  e9  b2  08 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417400: 9d  0f  b7  9d  97  0f  08  50  96  08  ca  86  52  08  9f  08 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417500: 12  fa  65  88  94  94  0c  be  0c  ea  d5  08  80  3b  40  98 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417600: 7d  08  0a  dd  9a  39  8b  8b  5a  5a  c6  c6  9b  9b  67  08 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417700: af  38  04  e9  02  20  c3  08  5a  5a  32  08  da  da  04  a8 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417800: 00  00  00  00  00  00  81  08  ea  00  44  00  08  00  0c  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417900: 2b  2b  8c  8c  4d  4d  84  00  ae  ae  67  08  a8  00  00  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417a00: 00  00  00  00  00  00  3e  00  00  00  00  00  00  00  00  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   : =>0x003928417b00: 00  00  00  00  00  00  52  52 [03] 00  8d  08  03  00  f2  08 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417c00: e1  03  4d  08  03  00  da  08  03  00  a7  08  03  00  ed  08 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417d00: 3a  08  34  08  03  00  6c  08  08  00  c8  08  8d  08  0a  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417e00: 1c  08  03  00  ce  08  5e  08  03  00  3d  08  51  08  86  08 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417f00: 26  08  03  00  bd  08  03  00  ff  08  a3  03  f9  08  03  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928418000: d9  08  03  00  6a  08  03  00  72  08  55  08  da  08  03  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928418100: fd  08  04  00  09  08  36  08  46  46  f8  00  2b  2b  c0  08 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928418200: 5b  00  37  00  b7  00  11  00  cf  00  00  00  00  00  00  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928418300: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+10-30 14:31:15.682 21487 21487 F DEBUG   : Tags for short granules around the buggy address (one tag corresponds to 16 bytes):
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417a00: ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  .. 
+10-30 14:31:15.682 21487 21487 F DEBUG   : =>0x003928417b00: ..  ..  ..  ..  ..  ..  ..  .. [3d] ..  ..  8d  4b  ..  ..  f2 
+10-30 14:31:15.682 21487 21487 F DEBUG   :   0x003928417c00: ..  e1  ..  4d  4a  ..  ..  da  5a  ..  ..  a7  32  ..  ..  ed 
+10-30 14:31:15.682 21487 21487 F DEBUG   : See https://clang.llvm.org/docs/HardwareAssistedAddressSanitizerDesign.html#short-granules for a description of short granule tags
+10-30 14:31:15.682 21487 21487 F DEBUG   : Learn more about HWASan reports: https://source.android.com/docs/security/test/memory-safety/hwasan-reports
+10-30 14:31:15.682 21487 21487 F DEBUG   : SUMMARY: HWAddressSanitizer: allocation-tail-overwritten (/data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so+0x1fd00c) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc) '
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x0  0000000000000000  x1  00000000000053e5  x2  0000000000000006  x3  e300006882f2b630
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x4  796873686d605272  x5  796873686d605272  x6  796873686d605272  x7  7f7f7f7f7f7f7f7f
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x8  00000000000000f0  x9  46a842e3c4c76ec3  x10 000000ff00000020  x11 00000072bf9304dc
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x12 0000000000000008  x13 0000006882f2b620  x14 0040000d200161a3  x15 0000165e383c9c5e
+10-30 14:31:15.682  1913  3432 I SDM     : CWB config passed by cwb_client : tappoint 1  CWB_ROI : (698.000000 109.000000 939.000000 350.000000) for display-0
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x16 00000072bf9bd358  x17 00000072bf99f180  x18 0000006867bb0000  x19 6300006882f2b630
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x20 e300006882f2b630  x21 0000000000004f78  x22 0000000000000000  x23 0200006a00000000
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x24 0000000000000000  x25 0040000d20016163  x26 00000006882f2b63  x27 0101010101010101
+10-30 14:31:15.682 21487 21487 F DEBUG   :     x28 00000000ffffffff  x29 0000006882f2b6b0
+10-30 14:31:15.682 21487 21487 F DEBUG   :     lr  00000072bf90f9c8  sp  0000006882f2b620  pc  00000072bf90f9f0  pst 0000000000001000
+10-30 14:31:15.682 21487 21487 F DEBUG   : 30 total frames
+10-30 14:31:15.682 21487 21487 F DEBUG   : backtrace:
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #00 pc 000000000007d9f0  /apex/com.android.runtime/lib64/bionic/hwasan/libc.so (abort+296) (BuildId: b41314433acc8c79eed7364e6ed3137e)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #01 pc 000000000003c764  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Abort()+88) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #02 pc 000000000003ad7c  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Die()+100) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #03 pc 000000000002f3f8  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan::ScopedReport::~ScopedReport()+536) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #04 pc 000000000002eb84  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan::(anonymous namespace)::BaseReport::~BaseReport()+20) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #05 pc 000000000002c5c4  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan::ReportTailOverwritten(__sanitizer::StackTrace*, unsigned long, unsigned long, unsigned char const*)+1220) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #06 pc 00000000000254ac  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan::HwasanDeallocate(__sanitizer::StackTrace*, void*)+332) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #07 pc 00000000000295d0  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__sanitizer_free+252) (BuildId: 742636119ffb24484fe45c5d21e284c968700fe3)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #08 pc 00000000001fd00c  /data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so (CbrpBufferClear+92) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #09 pc 00000000001fff34  /data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so (CbrpClearBufferedCommand+64) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #10 pc 00000000001e59d0  /data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so (EposClearCommandBuffer+16) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #11 pc 0000000000172c40  /data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so (EdcPrnSendData+276) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #12 pc 000000000023301c  /data/app/~~5mr-tQMrHnPzQZaby59xKQ==/com.epson.epos2_printer-szo-WUZTbSmqIl--tWebnA==/lib/arm64/libepos2.so (Java_com_epson_epos2_printer_Printer_nativeEpos2SendData+376) (BuildId: 3d5065715d43e9ed07ab2ab8a428d2060c4db7cc)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #13 pc 0000000000056130  /system/framework/arm64/boot-core-libart.oat (art_jni_trampoline+128) (BuildId: 21321375fd972b3be3cebfba2bca86b006e7173e)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #14 pc 00000000006a839c  /apex/com.android.art/lib64/libart.so (nterp_helper+7468) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #15 pc 00000000000efcb6  <anonymous:688adaf000> (com.epson.epos2.printer.Printer.sendData+50)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #16 pc 00000000006a75c4  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #17 pc 0000000000005f8a  <anonymous:72ac5b9000> (com.epson.epos2_printer.MainActivity.printData+42)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #18 pc 00000000006a75c4  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #19 pc 0000000000006030  <anonymous:72ac5b9000> (com.epson.epos2_printer.MainActivity.runPrintReceiptSequence+16)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #20 pc 00000000006a75c4  /apex/com.android.art/lib64/libart.so (nterp_helper+3924) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #21 pc 00000000000059e0  <anonymous:72ac5b9000> (com.epson.epos2_printer.MainActivity.access$200+0)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #22 pc 00000000006a66a4  /apex/com.android.art/lib64/libart.so (nterp_helper+52) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #23 pc 00000000000056f0  <anonymous:72ac5b9000> (com.epson.epos2_printer.MainActivity$3.run+4)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #24 pc 00000000000bf4e8  /system/framework/arm64/boot.oat (java.lang.Thread.run+72) (BuildId: e2e427920bdecc7e94842600bbc71fafe22b1a41)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #25 pc 000000000034db94  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #26 pc 000000000028d5fc  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+224) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #27 pc 00000000004b4d6c  /apex/com.android.art/lib64/libart.so (art::Thread::CreateCallback(void*)+1368) (BuildId: 3e21a13587866b5f2302888d3533ea74)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #28 pc 0000000000096bf4  /apex/com.android.runtime/lib64/bionic/hwasan/libc.so (__pthread_start(void*)+192) (BuildId: b41314433acc8c79eed7364e6ed3137e)
+10-30 14:31:15.682 21487 21487 F DEBUG   :       #29 pc 0000000000082ab4  /apex/com.android.runtime/lib64/bionic/hwasan/libc.so (__start_thread+68) (BuildId: b41314433acc8c79eed7364e6ed3137e)

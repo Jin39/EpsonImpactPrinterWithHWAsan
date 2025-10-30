@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+    ndkVersion "25.1.8937393"
+
+    defaultConfig {
+        applicationId "com.epson.epos2_printer"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+        
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+                arguments "-DANDROID_STL=c++_shared"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        
+        debug {
+            debuggable true
+            jniDebuggable true
+        }
+        
+        hwasan {
+            initWith debug
+            debuggable true
+            jniDebuggable true
+            applicationIdSuffix ".hwasan"
+            versionNameSuffix "-hwasan"
+            
+            ndk {
+                abiFilters 'arm64-v8a'  // HWASan only supports ARM64
+            }
+            
+            packagingOptions {
+                doNotStrip "*/arm64-v8a/*.so"
+            }
+            
+            externalNativeBuild {
+                cmake {
+                    cppFlags "-std=c++17", "-fsanitize=hwaddress", "-fno-omit-frame-pointer"
+                    cFlags "-fsanitize=hwaddress", "-fno-omit-frame-pointer -O1 -g -frtti -fexceptions -Wall -fstack-protector-all"
+                    arguments "-DCMAKE_BUILD_TYPE=Debug", "-DANDROID_STL=c++_shared"
+                }
+            }
+        }
+    }
+    
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+    
+    namespace 'com.epson.epos2_printer'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+}
