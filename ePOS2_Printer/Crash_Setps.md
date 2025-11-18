@@ -6,7 +6,7 @@ I’ve included a video demonstrating how to operate the POS and perform printin
 
 ![alt text](image.png)
 
-The steps in the video show how to trigger the print action. - https://github.com/LeoLeoLeoLei/EpsonImpactPrinterWithHWAsan/blob/main/demo.mp4
+The steps in the video show how to trigger the print action - https://github.com/LeoLeoLeoLei/EpsonImpactPrinterWithHWAsan/blob/main/ePOS2_Printer/demo.zip
 
 This crash occurs intermittently. In our development environment, we were able to reproduce it after testing for around 10–20 minutes.
 
