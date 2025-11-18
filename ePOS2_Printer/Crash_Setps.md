@@ -10,4 +10,4 @@ The steps in the video show how to trigger the print action. - https://github.co
 
 This crash occurs intermittently. In our development environment, we were able to reproduce it after testing for around 10–20 minutes.
 
-I uploaded a tombstone file; you can refer to the logs inside. 
+I uploaded a tombstone file; you can refer to the logs inside. - https://github.com/LeoLeoLeoLei/EpsonImpactPrinterWithHWAsan/blob/main/ePOS2_Printer/tombstone_24
