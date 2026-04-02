@@ -4,6 +4,13 @@ location: Payment Location (ID: 78130)
 
 printer: Impact_U220
 
+STR:
+
+1. login with pin code
+2. go settings -> printer -> select printer
+3. enter room screen
+4. run script
+
 automation script:
 
 ```python
