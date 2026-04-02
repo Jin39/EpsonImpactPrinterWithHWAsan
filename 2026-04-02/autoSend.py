@@ -1,12 +1,3 @@
-branch: `feature/epson/test-crash-2.43`
-
-location: Payment Location (ID: 78130)
-
-printer: Impact_U220
-
-automation script:
-
-```python
 #python3
 #! encoding=utf-8
 
@@ -69,6 +60,3 @@ while(True):
 ##        do(remove)
 ##        print('remove print task done')
     time.sleep(3)
-
-
-```
